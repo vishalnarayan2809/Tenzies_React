@@ -29,6 +29,7 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding: 20px;
 }
 
 .title {
@@ -122,6 +123,5 @@ button.roll-dice {
 }
 .dice-container{
   width: 100%;
-  padding: 0 1.5rem;
 }
 }
