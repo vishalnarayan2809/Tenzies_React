@@ -38,8 +38,10 @@ main {
 
 .instructions {
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     margin-top: 0;
+    color: gray;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -78,7 +80,7 @@ button.roll-dice {
     padding: 6px 21px;
     border: none;
     border-radius: 6px;
-    background-color: #5035FF;
+    background-color: black;
     color: white;
     font-size: 1.2rem;
 }
@@ -93,4 +95,29 @@ button.roll-dice {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+
+@media (max-width:450px) {
+   body{
+    min-height: 100vh;
+    min-height: 100dvh; /* Dynamic viewport height - accounts for mobile browser UI */
+    padding: 20px;
+  }
+  div#root {
+    height: 80dvh;
+    max-height: 400px;
+    max-width: 400px;
+    overflow: hidden;
+
+}
+
+.dice-container button {
+    height: 50px;
+    width: 50px;
+    box-shadow: 2px 2px 2px 2px rgba(97, 96, 96, 0.4);
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    font-weight: bold;
+}
 }
