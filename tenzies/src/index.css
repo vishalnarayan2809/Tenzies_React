@@ -109,10 +109,13 @@ button.roll-dice {
     max-height: 400px;
     max-width: 400px;
     overflow: hidden;
+  }
 
-}
+  main {
+    padding: 15px; /* Reduce padding on mobile */
+  }
 
-.dice-container button {
+  .dice-container button {
     height: 50px;
     width: 50px;
     box-shadow: 2px 2px 2px 2px rgba(97, 96, 96, 0.4);
@@ -120,8 +123,10 @@ button.roll-dice {
     border: none;
     background-color: white;
     font-weight: bold;
-}
-.dice-container{
-  width: 100%;
-}
+  }
+  
+  .dice-container{
+    gap: 15px; /* Reduce gap for mobile */
+    justify-content: center; /* Ensure centering */
+  }
 }
