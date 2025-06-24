@@ -57,23 +57,24 @@ export default function App() {
             value={dieObj.value}
             isHeld={dieObj.isHeld}
             hold={() => hold(dieObj.id)}
+            startgame={startgame}
         />
     ))
 
 
     return (
         <main>
-            {startgame && <MyStopwatch gameWon={gameWon}/>}
             {gameWon && <Confetti />}
+            {startgame && <MyStopwatch gameWon={gameWon}/>}
             <div aria-live="polite" className="sr-only">
                 {gameWon && <p>Congratulations! You won! Press "New Game" to start again.</p>}
             </div>
             <h1 className="title">Tenzies</h1>
             <p className="instructions">Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
-            <div className="dice-container" style={{filter: startgame?'':"blur(6px)"}}>
+            <div className="dice-container" style={{filter: startgame?'':"blur(4px)"}}>
                 {diceElements}
             </div>
-            <button ref={buttonRef} className="roll-dice" onClick={rollDice}>
+            <button  ref={buttonRef} className="roll-dice" onClick={rollDice} >
                 {gameWon ? "New Game" : startgame ? "Roll" : "Start Game"}
             </button>
         </main>

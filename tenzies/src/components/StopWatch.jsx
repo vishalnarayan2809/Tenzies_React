@@ -34,7 +34,7 @@ export default function MyStopwatch(props) {
   return (
     <div style={{textAlign: 'center'}}>
       <div style={{fontSize: '20px'}}>
-    <span style={{fontWeight: "bolder"}}>Time: </span><span>{minutes}</span>:<span>{seconds}</span>:<span>{milliseconds}</span>
+    <span style={{fontWeight: "bolder"}} >Time: </span><span>{minutes}</span>:<span>{seconds}</span>:<span>{milliseconds}</span>
       </div>
     </div>
   );
