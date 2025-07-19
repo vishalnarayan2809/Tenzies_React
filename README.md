@@ -8,7 +8,7 @@ A modern, interactive dice game built with React and Vite, featuring smooth anim
 
 ## 🚀 Live Demo
 
-[Play Tenzies Now!](https://your-netlify-url.netlify.app) *(Deploy using the instructions below)*
+[Play Tenzies Now!](https://tenziesrreact.netlify.app/) *(Deploy using the instructions below)*
 
 ## 🎮 Game Features
 
